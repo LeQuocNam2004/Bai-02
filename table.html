@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Ý nghĩa các thẻ:
+    <table></table>:Xác định 1 bảng
+    <thead></thead>:Phần đầu của bảng
+    <tbody></tbody>:Phần thân của bảng
+    <tr></tr>(table row):Xác định 1 hàng của bảng
+    <td></td>(table data):Xác định dữ liệu ô của bảng
+    <th></th>(table header):Xác định tiêu đề của bảng 
+    Thuộc tính:
+    - colspan:tạo ô mở rộng trên nhiều cột
+    - rowspan:tạo ô mở rộng trên nhiều hàng
+    -->
+    <style>
+        table,th,td{
+            border: 1px solid #ddd;
+        }
+        th,td{
+            padding: 10px;
+        }
+    </style>
+    <p>Ví dụ 1:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th>SĐT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Le Van A</td>
+                <td>0123456789</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Le Van B</td>
+                <td>01234567889</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Ví dụ 2:</p>
+    <table>
+        <thead>
+            <tr>
+                <td>Hàng 0  Cột 1</td>
+                <td>Hàng 0  Cột 2</td>
+                <td>Hàng 0  Cột 3</td>
+                <td>Hàng 0  Cột 4</td>
+                <td>Hàng 0  Cột 5</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Hàng 1  Cột 1</td>
+                <td rowspan="4">Hàng 1  Cột 2</td>
+                <td rowspan="3">Hàng 1  Cột 3</td>
+                <td>Hàng 1  Cột 4</td>
+                <td>Hàng 1  Cột 5</td>
+            </tr>
+            <tr>
+                >
+                <td>Hàng 2 Cột 4</td>
+                <td>Hàng 2 Cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 3 Cột 4</td>
+                <td>Hàng 3 cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 4  Cột 3</td>
+                <td>Hàng 4  Cột 4</td>
+                <td>Hàng 4  Cột 5</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Hàng 5  Cột 2</td>
+                <td rowspan="2">Hàng 5  Cột 3</td>
+                <td>Hàng 5  Cột 4</td>
+                <td>Hàng 5  Cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 6  Cột 4</td>
+                <td>Hàng 6  Cột 5</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Ví dụ 3:</p>
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="11">Hàng 1 Cột 1</td>
+                <td>Hàng 1 Cột 2</td>
+                <td colspan="3">Hàng 1 Cột 3</td>
+            </tr>
+            <tr>
+                <td>Hàng 2 Cột 2</td>
+                <td colspan="3">Hàng 2 Cột 3</td>
+            </tr>
+            <tr>
+                <td colspan="4">Hàng 3 Cột 2</td>
+            </tr>
+            <tr>
+                <td>Hàng 4 Cột 2</td>
+                <td colspan="3">Hàng 4 Cột 3</td>
+            </tr>
+            <tr>
+                <td>Hàng 5 Cột 2</td>
+                <td colspan="3">Hàng 5 Cột 3</td>
+            </tr>
+            <tr>
+                <td colspan="4">Hàng 6 Cột 2</td>
+            </tr>
+            <tr>
+                <td>Hàng 7 Cột 2</td>
+                <td>Hàng 7 Cột 3</td>
+                <td>Hàng 7 Cột 4</td>
+                <td>Hàng 7 Cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 8 Cột 2</td>
+                <td>Hàng 8 Cột 3</td>
+                <td>Hàng 8 Cột 4</td>
+                <td>Hàng 8 Cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 9 Cột 2</td>
+                <td>Hàng 9 Cột 3</td>
+                <td>Hàng 9 Cột 4</td>
+                <td>Hàng 9 Cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 10 Cột 2</td>
+                <td>Hàng 10 Cột 3</td>
+                <td>Hàng 10 Cột 4</td>
+                <td>Hàng 10 Cột 5</td>
+            </tr>
+            <tr>
+                <td colspan="3">Hàng 11 Cột 2</td>
+                <td>Hàng 11 Cột 5</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
